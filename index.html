@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Comment Box</title>
+</head>
+
+<body>
+    <h1>Comment Box</h1>
+    <div class="container">
+        <p class="warning-message"></p>
+        <form id="form">
+            <div class="form-name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-comment">
+                <label for="email">Comment</label>
+                <textarea name="comment" id="comment" placeholder="Type your comment here..." rows=""></textarea>
+            </div>
+            <button class="btn" type="submit">Send</button>
+            <p id="number-of-characters">0/140 characters remaining</p>
+            <div class="results">
+                <p class="name"></p>
+                <p class="email"></p>
+                <p class="comment"></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
